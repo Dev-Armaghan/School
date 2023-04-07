@@ -10,17 +10,21 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@school/student-management/domain": [
+        "libs/student-management/domain/src/index.ts"
+      ],
+      "@school/student-management/feature-home": [
+        "libs/student-management/feature-home/src/index.ts"
+      ],
+      "@school/student-management/feature-student": [
+        "libs/student-management/feature-student/src/index.ts"
+      ]
+    }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
